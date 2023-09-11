@@ -5,7 +5,7 @@ import seaborn as sns
 import warnings
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import linear_kernel, cosine_similarity
-from underthesea import word_tokenize, pos_tag, sent_tokenize
+#from underthesea import word_tokenize, pos_tag, sent_tokenize
 from gensim import corpora, models, similarities
 import re
 from wordcloud import WordCloud
