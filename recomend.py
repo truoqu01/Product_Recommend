@@ -127,7 +127,7 @@ def recommend_by_id(item_id, top_n):
 #recommend_by_id(48102821, 5)
 
 # 6. GUI
-menu = ["Business Objective", "Build Project", "Recommend"]
+menu = ["Business Objective", "Build Project", "Recommend by content"]
 choice = st.sidebar.selectbox('Menu', menu)
 if choice == 'Business Objective':    
     st.subheader("Business Objective")
@@ -136,6 +136,7 @@ if choice == 'Business Objective':
     """)  
     st.write("""###### => Problem/ Requirement: Use Machine Learning algorithms in Python for product recommendation on tiki.vn website.""")
     st.image("Recommender_by_content.png")
+    st.image("Collaborative_filtering.png")
 
 elif choice == 'Build Project':
     st.subheader("Build Project")

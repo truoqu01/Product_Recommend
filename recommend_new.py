@@ -158,7 +158,7 @@ new_user_recs = spark.read.parquet('Tiki_U.parquet')
 df_product_product_idx = spark.read.parquet('Tiki_P.parquet')
 
 # 6. GUI
-menu = ["Business Objective", "Build Project", "Recommend", "Collaborative Filtering"]
+menu = ["Business Objective", "Build Project", "Recommend by content", "Collaborative Filtering"]
 choice = st.sidebar.selectbox('Menu', menu)
 
 if choice == 'Business Objective':    
@@ -168,6 +168,7 @@ if choice == 'Business Objective':
     """)  
     st.write("""###### => Problem/ Requirement: Use Machine Learning algorithms in Python for product recommendation on tiki.vn website.""")
     st.image("Recommender_by_content.png")
+    st.image("Collaborative_filtering.png")
 
 elif choice == 'Build Project':
     st.subheader("Build Project")
@@ -179,7 +180,7 @@ elif choice == 'Build Project':
     st.write("##### 3. Build model...")
 
 
-elif choice == 'Recommend':
+elif choice == 'Recommend by content':
     # Define the Streamlit app
     #def main():
         #st.title("Product Recommendation App")
